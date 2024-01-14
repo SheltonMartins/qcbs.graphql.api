@@ -1,0 +1,74 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Users {
+  id           String         @id @default(cuid())
+  email        String         @unique
+  name         String
+  phone        String
+  password     String
+  fouls        String         @default("0")
+  status       Boolean        @default(false)
+  createdAt    DateTime       @default(now())
+  tokens       Tokens[]
+  appointments Appointments[]
+}
+
+model Tokens {
+  id       String  @id @default(cuid())
+  token    String  @unique
+  user     Users?  @relation(fields: [usersId], references: [id])
+  usersId  String?
+  barber   Barber? @relation(fields: [barberId], references: [id])
+  barberId String?
+}
+
+model Appointments {
+  id        String   @id @default(cuid())
+  name      String
+  time      String
+  date      String
+  createdAt DateTime @default(now())
+  barbers   Barber   @relation(fields: [barberId], references: [id])
+  barberId  String
+  user      Users    @relation(fields: [usersId], references: [id])
+  usersId   String
+}
+
+model Barber {
+  id           String         @id @default(cuid())
+  email        String         @unique
+  name         String
+  phone        String
+  password     String
+  createdAt    DateTime       @default(now())
+  tokens       Tokens[]
+  appointments Appointments[]
+  workTime     WorkTime?
+}
+
+model WorkTime {
+  id           String  @id @default(cuid())
+  monday       Boolean @default(true)
+  tuesday      Boolean @default(true)
+  wednesday    Boolean @default(true)
+  thursday     Boolean @default(true)
+  friday       Boolean @default(true)
+  saturday     Boolean @default(false)
+  vacation     Boolean @default(false)
+  startTime    String
+  endTime      String
+  startOfLunch String
+  endOfLunch   String
+  barber       Barber  @relation(fields: [barberId], references: [id])
+  barberId     String  @unique
+}
