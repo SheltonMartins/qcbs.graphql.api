@@ -1,6 +1,6 @@
 # API Cadastro Barbearia
 ## Descrição
-Este é o meu projeto autoral, onde desenvolvi uma funcionalidade incrível para selecionar barbeiros e filtrar horários disponíveis no dia escolhido. Utilizei tecnologias como React, GraphQL, Apollo Client e Styled Components
+Este é o meu projeto autoral, onde desenvolvi uma funcionalidade para selecionar barbeiros e filtrar horários disponíveis no dia escolhido. Utilizei tecnologias como React, GraphQL, Apollo Client e Styled Components
 
 ## Funcionalidades
 - Seleção de barbeiros
