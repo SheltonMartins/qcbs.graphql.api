@@ -16,8 +16,8 @@ Este é o meu projeto autoral, onde desenvolvi uma funcionalidade incrível para
 - TypeScript
 
 ## Instalação
-1. Clone o repositório: ``
-2. Entre no diretório: `cd seu-projeto`
+1. Clone o repositório: `https://github.com/SheltonMartins/qcbs.graphql.api.git`
+2. Entre no diretório: `cd qcbs.graphql.api`
 3. Instale as dependências: `npm install`
 
 ## Como Usar
