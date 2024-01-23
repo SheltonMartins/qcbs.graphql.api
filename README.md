@@ -9,7 +9,7 @@ Este é o meu projeto autoral, onde desenvolvi uma funcionalidade para seleciona
 - Agendamentos
 
 ## Tecnologias Utilizadas
-[![My Skills](https://skillicons.dev/icons?i=ts,react,graphql,styledcomponents,apollo)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=ts,react,graphql,apollo)](https://skillicons.dev)
 
 
 ## Instalação
