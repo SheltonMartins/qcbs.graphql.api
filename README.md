@@ -9,11 +9,8 @@ Este é o meu projeto autoral, onde desenvolvi uma funcionalidade para seleciona
 - Agendamentos
 
 ## Tecnologias Utilizadas
-- React
-- GraphQL
-- Apollo Client
-- Styled Components
-- TypeScript
+[![My Skills](https://skillicons.dev/icons?i=ts,graphql,styledcomponents,apollo)](https://skillicons.dev)
+
 
 ## Instalação
 1. Clone o repositório: `https://github.com/SheltonMartins/qcbs.graphql.api.git`
